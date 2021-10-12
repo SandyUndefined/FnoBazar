@@ -19,6 +19,10 @@
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+  
+  
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <!-- Scripts -->
+  <script src="{{ asset('js/app.js') }}" defer></script>

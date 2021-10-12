@@ -15,23 +15,19 @@
           <li><a href="#venue">Option Analyser</a></li>
           <li><a href="#hotels">Investment Details</a></li>
           <li><a href="#gallery">Strategy Builder</a></li>
-          
 
-           {{-- @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+           @if (Route::has('login'))
+                {{-- <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block"> --}}
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                    {{-- @include('layouts.navigation') --}}
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
+                        <li  class="buy-tickets"><a href="{{ route('login') }}">Log in / Register</a></li>
                     @endauth
                 </div>
             @endif
-             --}}
-          <li  class="buy-tickets"><a href="{{ route('login') }}">Log in / Register</a></li>
+
+
+          {{-- <li  class="buy-tickets"><a href="{{ route('login') }}">Log in / Register</a></li> --}}
         
         </ul>
       </nav>
